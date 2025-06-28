@@ -9,12 +9,12 @@ from telegram.error import TimedOut
 import asyncio
 
 # === CONFIG === (use environment variables)
-BOT_TOKEN = os.environ.get("BOT_TOKEN")
-CHAT_ID = os.environ.get("CHAT_ID")
-USERNAME = os.environ.get("USERNAME")
-PASSWORD = os.environ.get("PASSWORD")
-BASE_URL = os.environ.get("BASE_URL")
-LOGIN_PAGE_URL = os.environ.get("LOGIN_PAGE_URL")
+BOT_TOKEN = os.environ.get("8158173689:AAGx3Olc5x--__MhnuokE8lGG7HKhWbeX7g")
+CHAT_ID = os.environ.get("-1002352445455")
+USERNAME = os.environ.get("Client01")
+PASSWORD = os.environ.get("Client01")
+BASE_URL = os.environ.get("http://94.23.120.156")
+LOGIN_PAGE_URL = os.environ.get("http://94.23.120.156/ints/login")
 LOGIN_POST_URL = BASE_URL + "/ints/login"
 DATA_URL = BASE_URL + "/ints/client/res/data_smscdr.php"
 
@@ -145,12 +145,12 @@ async def sent_messages():
                         f"🔧 <b>Service:</b> {escape_html(service)}\n"
                         f"🔐 <b>OTP Code:</b> <code>{escape_html(otp)}</code>\n"
                         f"📝 <b>Msg:</b> <i>{escape_html(message)}</i>\n\n"
-                        "<b>P0WERED BY</b> @mahdiihasan"
+                        "<b>P0WERED BY</b> @BOTMakerTeam"
                     )
 
                     keyboard = InlineKeyboardMarkup([
-                        [InlineKeyboardButton("👨‍💻 Bot Owner", url="https://t.me/mahdiihasan")],
-                        [InlineKeyboardButton("🔁 Backup Channel", url="https://t.me/sdmethod09")]
+                        [InlineKeyboardButton("👨‍💻 Bot Owner", url="https://t.me/BOTMakerTeam")],
+                        [InlineKeyboardButton("🔁 Backup Channel", url="https://t.me/freeotpandnumberse")]
                     ])
 
                     try:
